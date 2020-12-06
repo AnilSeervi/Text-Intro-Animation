@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  position: relative;
+  overflow:hidden;
+}
+
+.header {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Monument Extended";
+  text-transform: uppercase;
+  font-size: 80px;
+  z-index: -1;
+}
+.container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #161616;
+  animation: silde-out-container 4s cubic-bezier(0.97, 0.01, 0.36, 0.99) 2.8s
+    forwards;
+}
+.text-wrapper {
+  color: #ffffff;
+  position: absolute;
+}
+.text {
+  font-family: "Monument Extended";
+  font-size: 54px;
+}
+.text-1,
+.text-3,
+.text-4,
+.text8,
+.text-9,
+.text-11 {
+  color: rgba(0, 0, 0, 0);
+  -webkit-text-stroke: 1px white;
+}
+.text-1 {
+  animation: blink 800ms linear 900ms, blink 800ms linear 2s;
+  opacity: 0;
+}
+.text-2 {
+  animation: blink 800ms linear 800ms, blink 800ms linear 2.1s;
+  opacity: 0;
+}
+.text-3 {
+  animation: blink 800ms linear 700ms, blink 800ms linear 2.2s;
+  opacity: 0;
+}
+.text-4 {
+  animation: blink 800ms linear 600ms, blink 800ms linear 2.3s;
+  opacity: 0;
+}
+.text-5 {
+  animation: blink 800ms linear 500ms, blink 800ms linear 2.4s;
+  opacity: 0;
+}
+.text-6 {
+  animation: blink 800ms linear 400ms, blink 800ms linear 2.5s,
+    silde-out 1s linear 3.2s;
+  opacity: 0;
+}
+.text-7 {
+  animation: blink 800ms linear 500ms, blink 800ms linear 2.4s;
+  opacity: 0;
+}
+.text-8 {
+  animation: blink 800ms linear 600ms, blink 800ms linear 2.3s;
+  opacity: 0;
+}
+.text-9 {
+  animation: blink 800ms linear 700ms, blink 800ms linear 2.2s;
+  opacity: 0;
+}
+.text-10 {
+  animation: blink 800ms linear 800ms, blink 800ms linear 2.1s;
+  opacity: 0;
+}
+.text-11 {
+  animation: blink 800ms linear 900ms, blink 800ms linear 2s;
+  opacity: 0;
+}
+@keyframes silde-out {
+  0% {
+    opacity: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  19% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 0;
+  }
+  39% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 1;
+  }
+  59% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0;
+  }
+  79% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes silde-out-container {
+  0% {
+    height: 100vh;
+  }
+  40% {
+    height: 100vh;
+  }
+  100% {
+    height: 0;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
